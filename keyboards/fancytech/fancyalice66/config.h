@@ -7,6 +7,4 @@
 #    define RGB_MATRIX_LED_COUNT 82
 
     /* RGB Matrix effect */
-#    define RGB_MATRIX_KEYPRESSES // reacts to keypresses
-#    define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 #endif

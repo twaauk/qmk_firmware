@@ -31,7 +31,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #ifdef RGB_MATRIX_ENABLE
   #define RGB_MATRIX_LED_COUNT 40
-  #define RGB_MATRIX_KEYPRESSES  // reacts to keypresses
   // #define RGB_MATRIX_KEYRELEASES // reacts to keyreleases (instead of keypresses)
   #define RGB_DISABLE_WHEN_USB_SUSPENDED  // turn off effects when suspended
   // #define RGB_MATRIX_LED_PROCESS_LIMIT (RGB_MATRIX_LED_COUNT + 4) / 5 // limits the number of LEDs to process in an animation per task run (increases keyboard responsiveness)
@@ -61,11 +60,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //   #undef ENABLE_RGB_MATRIX_RAINDROPS
 //   #undef ENABLE_RGB_MATRIX_JELLYBEAN_RAINDROPS
 
-#    define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 //   #undef ENABLE_RGB_MATRIX_TYPING_HEATMAP
 //   #undef ENABLE_RGB_MATRIX_DIGITAL_RAIN
-
-//   #define RGB_MATRIX_KEYPRESSES  // reacts to keypresses
 
 //   #undef ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
 //   #undef ENABLE_RGB_MATRIX_SOLID_REACTIVE

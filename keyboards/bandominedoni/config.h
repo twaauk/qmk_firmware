@@ -28,9 +28,6 @@
 /* ws2812 RGB MATRIX */
 #   define RGB_MATRIX_LED_COUNT 76
 
- // reacts to keypresses
-#   define RGB_MATRIX_KEYPRESSES
-
 //  for all fingers used at once.
 #   define LED_HITS_TO_REMEMBER 10
 

@@ -23,8 +23,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #ifdef RGB_MATRIX_ENABLE
 
 #define RGB_DISABLE_WHEN_USB_SUSPENDED
-#define RGB_MATRIX_KEYPRESSES 
-#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 120
 
 #define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_CYCLE_ALL
@@ -61,14 +59,11 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 // LEDs are present, or when multiple LEDs are associated with the same key.
 #undef ENABLE_RGB_MATRIX_PIXEL_FRACTAL
 
-// Framebuffer effects; can be enabled only if RGB_MATRIX_FRAMEBUFFER_EFFECTS
-// is defined.  Both of these effects currently don't work properly when the
-// key matrix does not match the physical layout, so they are disabled.
+// Framebuffer effects; Both of these effects currently don't work properly when
+// the key matrix does not match the physical layout, so they are disabled.
 #undef ENABLE_RGB_MATRIX_TYPING_HEATMAP
 #undef ENABLE_RGB_MATRIX_DIGITAL_RAIN
 
-// Reactive effects; can be enabled only if at least one of
-// RGB_MATRIX_KEYPRESSES or RGB_MATRIX_KEYRELEASES is defined.
 #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
 #define ENABLE_RGB_MATRIX_SOLID_REACTIVE
 #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE

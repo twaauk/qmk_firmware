@@ -47,7 +47,6 @@
 
 // Key press reactive animations
 #    define SPLIT_TRANSPORT_MIRROR // Necessary setting for key press animations
-#    define RGB_MATRIX_KEYPRESSES  // Enables key press effects
 #    define ENABLE_RGB_MATRIX_MULTISPLASH
 
 // Normal effects

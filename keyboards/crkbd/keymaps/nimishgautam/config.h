@@ -51,8 +51,6 @@
 
 // rgb matrix, cooler effects than lighting above
 #ifdef RGB_MATRIX_ENABLE
-    #define RGB_MATRIX_KEYPRESSES
-    #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
     #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 150
     #define RGB_MATRIX_HUE_STEP 8
     #define RGB_MATRIX_SAT_STEP 8

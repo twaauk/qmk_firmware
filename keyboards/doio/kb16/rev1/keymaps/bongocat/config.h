@@ -21,9 +21,6 @@
 #define LAYER_STATE_8BIT
 
 #ifdef RGB_MATRIX_ENABLE
-    /* RGB Matrix config */
-    #undef RGB_MATRIX_KEYPRESSES
-
     /* RGB Matrix effect */
     #undef ENABLE_RGB_MATRIX_ALPHAS_MODS
     #undef ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN

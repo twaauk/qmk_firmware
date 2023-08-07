@@ -26,9 +26,6 @@
     #define RGB_DISABLE_WHEN_USB_SUSPENDED
 
 // Effects
-    #define RGB_MATRIX_FRAMEBUFFER_EFFECTS  // Heatmap, Rain
-    #define RGB_MATRIX_KEYPRESSES           // REACTIVE, SPLASH modes
-
     // Disable effects you don't like.
     // Soon, you'll have to explicitly enable effects you want: https://github.com/qmk/qmk_firmware/pull/13758
     // #define DISABLE_RGB_MATRIX_SOLID_COLOR,             // Static single hue, no speed support

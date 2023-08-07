@@ -20,8 +20,7 @@
     #define RGB_DISABLE_WHEN_USB_SUSPENDED     // turn off effects when suspended
     #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 200  // limits maximum brightness of LEDs to {x} out of 255. If not defined maximum brightness is set to 255
 
-    #define RGB_MATRIX_KEYPRESSES
-
+    
     #define ENABLE_RGB_MATRIX_SOLID_COLOR               // Static single color
     #define ENABLE_RGB_MATRIX_ALPHAS_MODS               // Static dual hue, speed is hue for secondary hue
     #define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN          // Static gradient top to bottom, speed controls how much gradient changes
@@ -50,11 +49,9 @@
     #define ENABLE_RGB_MATRIX_HUE_PENDULUM              // Hue shifts up a slight amount in a wave to the right, then back to the left
     #define ENABLE_RGB_MATRIX_HUE_WAVE                  // Hue shifts up a slight amount and then back down in a wave to the right
 
-    /* RGB_MATRIX_FRAMEBUFFER_EFFECTS) */
     // #define ENABLE_RGB_MATRIX_TYPING_HEATMAP
     // #define ENABLE_RGB_MATRIX_DIGITAL_RAIN
 
-    /* RGB_MATRIX_KEYPRESSES) | defined(RGB_MATRIX_KEYRELEASES) */
     #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE     // Pulses keys hit to hue & value then fades value out
     #define ENABLE_RGB_MATRIX_SOLID_REACTIVE            // Static single hue, pulses keys hit to shifted hue then fades to current hue
     #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE       // Hue & value pulse near a single key hit then fades value out

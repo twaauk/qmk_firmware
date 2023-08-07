@@ -23,10 +23,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     #define RGB_MATRIX_LED_COUNT 52
     #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 150
 
-    #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
-
-    #define RGB_MATRIX_KEYPRESSES  // reacts to keypresses
-
     #define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_TYPING_HEATMAP
   #else
     #define RGBLIGHT_EFFECT_BREATHING

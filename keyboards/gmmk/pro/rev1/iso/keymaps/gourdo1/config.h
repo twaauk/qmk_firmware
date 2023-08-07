@@ -43,8 +43,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #ifdef RGB_MATRIX_ENABLE
     #define RGB_DISABLE_WHEN_USB_SUSPENDED
-    #define RGB_MATRIX_KEYPRESSES            // Enables REACTIVE & SPLASH modes
-    #define RGB_MATRIX_FRAMEBUFFER_EFFECTS   // Enables Heatmap, Rain
 
     // RGB step values
     #define RGBLIGHT_HUE_STEP 32             // The number of steps to cycle through the hue by (default 10)
@@ -88,10 +86,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     //#undef ENABLE_RGB_MATRIX_PIXEL_RAIN                     // Non-sustained raindrops of pastel colors
     #undef ENABLE_RGB_MATRIX_PIXEL_FLOW                       // More active version of pixel rain with quick cycling (unusable, very distracting)
     #undef ENABLE_RGB_MATRIX_PIXEL_FRACTAL                    // Same as Pixel Flow but with current HSV only (somewhat distracting)
-        //Only enabled if RGB_MATRIX_FRAMEBUFFER_EFFECTS is defined
     //#undef ENABLE_RGB_MATRIX_TYPING_HEATMAP                 // Fading heatmap that follows keystrokes (has buggy side LEDs that glow red)
     //#undef ENABLE_RGB_MATRIX_DIGITAL_RAIN                   // The Matrix (has buggy side LEDs that glow red)
-        //Only enabled if RGB_MATRIX_KEYPRESSES or RGB_MATRIX_KEYRELEASES is defined
     //#undef ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE          // Key hits shown in current hue - all other keys black
     //#undef ENABLE_RGB_MATRIX_SOLID_REACTIVE                 // Keyboard lights up in chosen hue, key hits shown in complementary hue (try this as default?)
     #undef ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE              // Hue & value pulse around a single key hit then fades value out (Single key)

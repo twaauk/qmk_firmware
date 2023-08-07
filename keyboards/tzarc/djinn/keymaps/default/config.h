@@ -12,8 +12,6 @@
 #define LCD_ACTIVITY_TIMEOUT 30000
 
 // RGB settings
-#define RGB_MATRIX_KEYPRESSES
-#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 
 // Allow for an extra sync command over the split
 #define SPLIT_TRANSACTION_IDS_USER THEME_DATA_SYNC

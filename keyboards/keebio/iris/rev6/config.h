@@ -56,10 +56,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #        define ENABLE_RGB_MATRIX_DUAL_BEACON
 #        define ENABLE_RGB_MATRIX_RAINBOW_BEACON
 #        define ENABLE_RGB_MATRIX_RAINBOW_PINWHEELS
-// enabled only if RGB_MATRIX_FRAMEBUFFER_EFFECTS is defined
 #        define ENABLE_RGB_MATRIX_TYPING_HEATMAP
 #        define ENABLE_RGB_MATRIX_DIGITAL_RAIN
-// enabled only of RGB_MATRIX_KEYPRESSES or RGB_MATRIX_KEYRELEASES is defined
 #        define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
 #        define ENABLE_RGB_MATRIX_SOLID_REACTIVE
 #        define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE
@@ -77,5 +75,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #        define RGB_MATRIX_LED_COUNT 68
 #        define RGB_MATRIX_SPLIT { 34, 34 }
 #        define RGB_DISABLE_WHEN_USB_SUSPENDED
-#        define RGB_MATRIX_KEYPRESSES
 #    endif

@@ -71,11 +71,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    undef ENABLE_RGB_MATRIX_RAINDROPS
 #    undef ENABLE_RGB_MATRIX_JELLYBEAN_RAINDROPS
 
-#    define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 // #undef ENABLE_RGB_MATRIX_TYPING_HEATMAP
 #    undef ENABLE_RGB_MATRIX_DIGITAL_RAIN
-
-#    define RGB_MATRIX_KEYPRESSES  // reacts to keypresses
 
 #    undef ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
 #    undef ENABLE_RGB_MATRIX_SOLID_REACTIVE

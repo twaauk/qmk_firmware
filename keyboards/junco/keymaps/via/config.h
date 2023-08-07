@@ -30,10 +30,6 @@
 
 // Allow keypress reactive animations
 #    define SPLIT_TRANSPORT_MIRROR // Necessary setting for key press animations on a split
-#    define RGB_MATRIX_KEYPRESSES  // Enables key press effects
-
-// Allow frame buffer effects
-#    define RGB_MATRIX_FRAMEBUFFER_EFFECTS // Enables frame buffer effects
 
 // All effect definitions
 #    define ENABLE_RGB_MATRIX_ALPHAS_MODS            // Enables RGB_MATRIX_ALPHAS_MODS
@@ -66,11 +62,9 @@
 #    define ENABLE_RGB_MATRIX_PIXEL_FLOW             // Enables RGB_MATRIX_PIXEL_FLOW
 #    define ENABLE_RGB_MATRIX_PIXEL_RAIN             // Enables RGB_MATRIX_PIXEL_RAIN
 
-// Following need RGB_MATRIX_FRAMEBUFFER_EFFECTS
 #    define ENABLE_RGB_MATRIX_TYPING_HEATMAP // Enables RGB_MATRIX_TYPING_HEATMAP
 #    define ENABLE_RGB_MATRIX_DIGITAL_RAIN   // Enables RGB_MATRIX_DIGITAL_RAIN
 
-// Following need RGB_MATRIX_KEYPRESSES
 #    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE     // Enables RGB_MATRIX_SOLID_REACTIVE_SIMPLE
 #    define ENABLE_RGB_MATRIX_SOLID_REACTIVE            // Enables RGB_MATRIX_SOLID_REACTIVE
 #    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE       // Enables RGB_MATRIX_SOLID_REACTIVE_WIDE

@@ -35,4 +35,3 @@
 #define RGB_BACKLIGHT_COLOR_1 { .h = 0, .s = 255 }
 #define RGB_BACKLIGHT_COLOR_2 { .h = 150, .s = 255 }
 
-#define RGB_MATRIX_KEYPRESSES

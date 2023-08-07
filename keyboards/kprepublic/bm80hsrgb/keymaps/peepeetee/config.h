@@ -38,8 +38,6 @@
 // #define TAP_CODE_DELAY 100          // Sets the delay between register_code and unregister_code, if you're having issues with it registering properly (common on VUSB boards). The value is in milliseconds.
 // #define TAP_HOLD_CAPS_DELAY 80      // Sets the delay for Tap Hold keys (LT, MT) when using KC_CAPS_LOCK keycode, as this has some special handling on MacOS.  The value is in milliseconds, and defaults to 80 ms if not defined. For macOS, you may want to set this to 200 or higher.
 
-// #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
-// #define RGB_MATRIX_KEYPRESSES         // reacts to keypresses
 // #define RGB_MATRIX_KEYRELEASES        // reacts to keyreleases (instead of keypresses)
 // #define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_ALPHAS_MODS // Sets the default mode, if none has been set
 // #define RGB_DISABLE_WHEN_USB_SUSPENDED false // turn off effects when suspended
@@ -75,10 +73,8 @@
 #define DISABLE_RGB_MATRIX_HUE_BREATHING                 // Hue shifts up a slight ammount at the same time, then shifts back
 #define DISABLE_RGB_MATRIX_HUE_PENDULUM                  // Hue shifts up a slight ammount in a wave to the right, then back to the left
 #define DISABLE_RGB_MATRIX_HUE_WAVE                      // Hue shifts up a slight ammount and then back down in a wave to the right
-// =================================================== Requires RGB_MATRIX_FRAMEBUFFER_EFFECTS =============================================================
 // #define DISABLE_RGB_MATRIX_TYPING_HEATMAP                // How hot is your WPM!
 #define DISABLE_RGB_MATRIX_DIGITAL_RAIN                  // That famous computer simulation
-// =================================================== RGB_MATRIX_KEYPRESSES OR RGB_MATRIX_KEYRELEASES =====================================================
 #define DISABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE         // Pulses keys hit to hue & value then fades value out
 #define DISABLE_RGB_MATRIX_SOLID_REACTIVE                // Static single hue, pulses keys hit to shifted hue then fades to current hue
 #define DISABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE           // Hue & value pulse near a single key hit then fades value out

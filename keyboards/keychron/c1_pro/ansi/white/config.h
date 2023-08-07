@@ -43,6 +43,4 @@
 // LED Matrix Animation modes. Explicitly enabled
 // For full list of effects, see:
 // https://docs.qmk.fm/#/feature_led_matrix?id=led-matrix-effects
-// #if defined(LED_MATRIX_KEYPRESSES) || defined(LED_MATRIX_KEYRELEASES)
-#define LED_MATRIX_KEYPRESSES
 #define LED_MATRIX_KEYRELEASES

@@ -103,7 +103,6 @@ RGBLIGHT_ENABLE = yes       # Enable global lighting effects. Do not enable with
 LED_ANIMATIONS = yes        # LED animations
 LED_MIRRORED = no           # Mirror LEDs across halves (enable DIP 1 on slave, and DIP 2 and 3 on master)
 RGB_MATRIX_ENABLE = no      # Enable per-key coordinate based RGB effects. Do not enable with RGBlight
-RGB_MATRIX_KEYPRESSES = no  # Enable reactive per-key effects. Can be very laggy
 RGBLIGHT_FULL_POWER = no    # Allow maximum RGB brightness. Otherwise, limited to a safe level for a normal USB-A port
 UNICODE_ENABLE = no         # Unicode
 SWAP_HANDS_ENABLE = no      # Enable one-hand typing

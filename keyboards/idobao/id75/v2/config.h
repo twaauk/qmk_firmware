@@ -21,8 +21,6 @@
 // RGB Matrix Animation modes. Explicitly enabled
 // For full list of effects, see:
 // https://docs.qmk.fm/#/feature_rgb_matrix?id=rgb-matrix-effects
-#    define RGB_MATRIX_FRAMEBUFFER_EFFECTS
-#    define RGB_MATRIX_KEYPRESSES
 #    define ENABLE_RGB_MATRIX_ALPHAS_MODS
 #    define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
 #    define ENABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT
@@ -40,10 +38,8 @@
 #    define ENABLE_RGB_MATRIX_CYCLE_OUT_IN
 #    define ENABLE_RGB_MATRIX_CYCLE_OUT_IN_DUAL
 #    define ENABLE_RGB_MATRIX_CYCLE_PINWHEEL
-// enabled only if RGB_MATRIX_FRAMEBUFFER_EFFECTS is defined
 #    define ENABLE_RGB_MATRIX_TYPING_HEATMAP
 #    define ENABLE_RGB_MATRIX_DIGITAL_RAIN
-// enabled only if RGB_MATRIX_KEYPRESSES or RGB_MATRIX_KEYRELEASES is defined
 #    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
 #    define ENABLE_RGB_MATRIX_SOLID_REACTIVE
 #    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE

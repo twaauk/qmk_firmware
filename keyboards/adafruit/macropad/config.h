@@ -56,10 +56,6 @@
      /* RGB Defines */
 #    define RGB_MATRIX_LED_COUNT 12
 
-     /* Enable Framebuffer and keypress effects */
-#    define RGB_MATRIX_FRAMEBUFFER_EFFECTS
-#    define RGB_MATRIX_KEYPRESSES
-
 #    define ENABLE_RGB_MATRIX_ALPHAS_MODS
 #    define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
 #    define ENABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT

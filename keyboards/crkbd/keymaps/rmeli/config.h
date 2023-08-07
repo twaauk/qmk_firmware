@@ -26,7 +26,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #ifdef RGB_MATRIX_ENABLE
 // RGB matrix options
-#    define RGB_MATRIX_KEYPRESSES // enable keypress effects
 #    define RGB_MATRIX_LED_FLUSH_LIMIT 16
 #    define RGB_DISABLE_WHEN_USB_SUSPENDED
 // Disable unwanted R2G effects (from r2g/config.h)

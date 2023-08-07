@@ -32,8 +32,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     #define RGB_MATRIX_SAT_STEP 10
     #define RGB_MATRIX_VAL_STEP 10
     #define RGB_MATRIX_SPD_STEP 10
-    // #define RGB_MATRIX_KEYPRESSES
-    #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 
 // BEGIN: Disable RGB Effects
 //#undef ENABLE_RGB_MATRIX_SOLID_COLOR
@@ -60,12 +58,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    undef ENABLE_RGB_MATRIX_RAINDROPS
 #    undef ENABLE_RGB_MATRIX_JELLYBEAN_RAINDROPS
 
-// BEGIN: RGB_MATRIX_FRAMEBUFFER_EFFECTS
 #    undef ENABLE_RGB_MATRIX_TYPING_HEATMAP
 // #undef ENABLE_RGB_MATRIX_DIGITAL_RAIN
-// END: RGB_MATRIX_FRAMEBUFFER_EFFECTS
 
-// BEGIN: RGB_MATRIX_KEYPRESSES
 #    undef ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
 #    undef ENABLE_RGB_MATRIX_SOLID_REACTIVE
 #    undef ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE
@@ -78,7 +73,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    undef ENABLE_RGB_MATRIX_MULTISPLASH
 #    undef ENABLE_RGB_MATRIX_SOLID_SPLASH
 #    undef ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
-// END: RGB_MATRIX_KEYPRESSES
 // END: Disable RGB Effects
 #endif
 

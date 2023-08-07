@@ -27,9 +27,6 @@
 // Below added per: https://beta.docs.qmk.fm/using-qmk/hardware-features/lighting/feature_rgb_matrix#suspended-state-id-suspended-state
     #define RGB_DISABLE_WHEN_USB_SUSPENDED
 
-    #define RGB_MATRIX_FRAMEBUFFER_EFFECTS // Heatmap, Rain
-    #define RGB_MATRIX_KEYPRESSES // REACTIVE, SPLASH modes
-
 // Soon we need to ENABLE modes by DEFAULT soon as per: https://github.com/qmk/qmk_firmware/pull/13758 Thanks @noroadsleft
 //    #undef ENABLE_RGB_MATRIX_SOLID_COLOR               // BUILT IN (MAPPED!) Static single color.
 //    #undef ENABLE_RGB_MATRIX_ALPHAS_MODS               // Accenting various keys on the keyboard.

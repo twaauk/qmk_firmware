@@ -21,9 +21,7 @@
 
     #define RGB_MATRIX_LED_COUNT 61                     // The number of LEDs connected
     
-    #define RGB_MATRIX_KEYPRESSES                       // reacts to keypresses
     #define RGB_MATRIX_KEYRELEASES                      // reacts to keyreleases (instead of keypresses)
-    #define RGB_MATRIX_FRAMEBUFFER_EFFECTS              // enable framebuffer effects
 
     #define ENABLE_RGB_MATRIX_SOLID_COLOR               // Static single color
     #define ENABLE_RGB_MATRIX_ALPHAS_MODS               // Static dual hue, speed is hue for secondary hue
@@ -53,11 +51,9 @@
     #define ENABLE_RGB_MATRIX_HUE_PENDULUM              // Hue shifts up a slight amount in a wave to the right, then back to the left
     #define ENABLE_RGB_MATRIX_HUE_WAVE                  // Hue shifts up a slight amount and then back down in a wave to the right
 
-    /* RGB_MATRIX_FRAMEBUFFER_EFFECTS) */
     #define ENABLE_RGB_MATRIX_TYPING_HEATMAP
     #define ENABLE_RGB_MATRIX_DIGITAL_RAIN
 
-    /* RGB_MATRIX_KEYPRESSES) | defined(RGB_MATRIX_KEYRELEASES) */
     #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE     // Pulses keys hit to hue & value then fades value out
     #define ENABLE_RGB_MATRIX_SOLID_REACTIVE            // Static single hue, pulses keys hit to shifted hue then fades to current hue
     #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE       // Hue & value pulse near a single key hit then fades value out

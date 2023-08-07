@@ -27,8 +27,7 @@
     #define RGB_DISABLE_WHEN_USB_SUSPENDED     // turn off effects when suspended
     #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 180  // limits maximum brightness of LEDs to x out of 255. If not defined maximum brightness is set to 255
 
-    #define RGB_MATRIX_KEYPRESSES
-    // do not enable RGB_MATRIX_FRAMEBUFFER_EFFECTS as these effects don't work will with this LED placement
+        // do not enable framebuffer effects as these don't work will with this LED placement
 
     // changes to this list will break the sequence set in the VIA `json` file.
     /* Standard animation set */
@@ -63,11 +62,9 @@
     // #define ENABLE_RGB_MATRIX_PIXEL_FLOW  // ** do not enable
     // #define ENABLE_RGB_MATRIX_PIXEL_RAIN  // ** do not enable
 
-    /* RGB_MATRIX_FRAMEBUFFER_EFFECTS */
     // #define ENABLE_RGB_MATRIX_TYPING_HEATMAP  // ** do not enable
     // #define ENABLE_RGB_MATRIX_DIGITAL_RAIN  // ** do not enable
 
-    /* RGB_MATRIX_KEYPRESSES */
     #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE     // Pulses keys hit to hue & value then fades value out
     #define ENABLE_RGB_MATRIX_SOLID_REACTIVE            // Static single hue, pulses keys hit to shifted hue then fades to current hue
     #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE       // Hue & value pulse near a single key hit then fades value out

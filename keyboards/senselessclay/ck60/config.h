@@ -19,8 +19,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* RGB matrix lighting */ 
 #define RGB_MATRIX_LED_COUNT 62
-#define RGB_MATRIX_KEYPRESSES
-#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 160   // limit brightness to not overamp the USB
 #define RGB_MATRIX_LED_FLUSH_LIMIT 16       // 16 is equivalent to limiting to 60fps
 #define RGB_DISABLE_WHEN_USB_SUSPENDED      // turn off effects when suspended
@@ -42,9 +40,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    define ENABLE_RGB_MATRIX_CYCLE_PINWHEEL
 #    define ENABLE_RGB_MATRIX_RAINBOW_PINWHEELS
 #    define ENABLE_RGB_MATRIX_RAINDROPS
-// enabled only if RGB_MATRIX_FRAMEBUFFER_EFFECTS is defined
 #    define ENABLE_RGB_MATRIX_TYPING_HEATMAP
-// enabled only of RGB_MATRIX_KEYPRESSES or RGB_MATRIX_KEYRELEASES is defined
 #    define ENABLE_RGB_MATRIX_SOLID_REACTIVE
 #    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTIWIDE
 #    define ENABLE_RGB_MATRIX_MULTISPLASH

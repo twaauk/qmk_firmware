@@ -15,8 +15,7 @@
     #endif
     #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 200  // limits maximum brightness of LEDs to x out of 255
 
-    //// #define RGB_MATRIX_KEYPRESSES
-
+    //
     // RGB Matrix config, nit-pick a few animations. "////" = already defined in base `config.h`, `#undef` disables it
 
     //// #define ENABLE_RGB_MATRIX_ALPHAS_MODS             // Static dual hue, speed is hue for secondary hue
@@ -50,14 +49,9 @@
     #undef ENABLE_RGB_MATRIX_PIXEL_FLOW
     //// #undef ENABLE_RGB_MATRIX_PIXEL_FRACTAL
 
-    // don't need `#if`, animation modes themselves check defines
-    // #if defined(RGB_MATRIX_FRAMEBUFFER_EFFECTS)
     //// #define ENABLE_RGB_MATRIX_TYPING_HEATMAP
     //// #define ENABLE_RGB_MATRIX_DIGITAL_RAIN
-    // #endif
 
-    // don't need `#if`, animation modes themselves check defines
-    // #if defined(RGB_MATRIX_KEYPRESSES) || defined(RGB_MATRIX_KEYRELEASES)
     //// #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE     // Pulses keys hit to hue & value then fades value out
     //// #define ENABLE_RGB_MATRIX_SOLID_REACTIVE            // Static single hue, pulses keys hit to shifted hue then fades to current hue
     //// #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE       // Hue & value pulse near a single key hit then fades value out
@@ -70,5 +64,4 @@
     //// #define ENABLE_RGB_MATRIX_MULTISPLASH               // Full gradient & value pulse away from multiple key hits then fades value out
     //// #define ENABLE_RGB_MATRIX_SOLID_SPLASH              // Hue & value pulse away from a single key hit then fades value out
     //// #define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH         // Hue & value pulse away from multiple key hits then fades value out
-    // #endif
 #endif

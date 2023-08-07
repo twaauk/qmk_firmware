@@ -79,10 +79,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #  define ENABLE_RGB_MATRIX_HUE_BREATHING               // Hue shifts up a slight ammount at the same time then shifts back
 // #  define ENABLE_RGB_MATRIX_HUE_PENDULUM                // Hue shifts up a slight ammount in a wave to the right then back to the left
 #  define ENABLE_RGB_MATRIX_HUE_WAVE                          // Hue shifts up a slight ammount and then back down in a wave to the right 
-// #    define RGB_MATRIX_FRAMEBUFFER_EFFECTS // Required for the following two effects
 // #  define ENABLE_RGB_MATRIX_TYPING_HEATMAP               // How hot is your WPM!
 // #  define ENABLE_RGB_MATRIX_DIGITAL_RAIN                 // That famous computer simulation
-// #    define RGB_MATRIX_KEYPRESSES // reacts to keypresses, required for the remaining effects
 // #    define RGB_MATRIX_KEYRELEASES // reacts to keyreleases (instead of keypresses)
 // #  define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE       // Pulses keys hit to hue & value then fades value out
 // #  define ENABLE_RGB_MATRIX_SOLID_REACTIVE              // Static single hue pulses keys hit to shifted hue then fades to current hue

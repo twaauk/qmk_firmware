@@ -5,9 +5,6 @@
 #ifdef RGB_MATRIX_ENABLE
 	#define RGB_DISABLE_WHEN_USB_SUSPENDED
 
-	#define RGB_MATRIX_FRAMEBUFFER_EFFECTS // Heatmap, Rain
-	#define RGB_MATRIX_KEYPRESSES // REACTIVE, SPLASH modes
-
 	// #undef ENABLE_RGB_MATRIX_SOLID_COLOR               // BUILT IN (MAPPED!) Static single color.
 	#undef ENABLE_RGB_MATRIX_ALPHAS_MODS                // Accenting various keys on the keyboard.
 	// #undef ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN           // Top down rainbow!

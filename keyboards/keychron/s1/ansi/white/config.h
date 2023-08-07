@@ -48,8 +48,6 @@
 #define ENABLE_LED_MATRIX_CYCLE_UP_DOWN            // Full gradient scrolling top to bottom
 #define ENABLE_LED_MATRIX_CYCLE_OUT_IN             // Full gradient scrolling out to in
 #define ENABLE_LED_MATRIX_DUAL_BEACON              // Full gradient spinning around center of keyboard
-// #if defined(LED_MATRIX_KEYPRESSES) || defined(LED_MATRIX_KEYRELEASES)
-#define LED_MATRIX_KEYPRESSES
 #define LED_MATRIX_KEYRELEASES
 
 #define ENABLE_LED_MATRIX_SOLID_REACTIVE_SIMPLE     // Pulses keys hit then fades out

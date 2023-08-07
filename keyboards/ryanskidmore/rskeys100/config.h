@@ -33,7 +33,6 @@
  * At full brightness with all three indicator LEDs on, the power draw is about 450 mA. */
 #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 110
 /* Enable framebuffer effects */
-#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 /* Enable the cycle left right animation and set it as the startup mode */
 #define ENABLE_RGB_MATRIX_CYCLE_LEFT_RIGHT
 #define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_CYCLE_LEFT_RIGHT

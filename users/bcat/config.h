@@ -101,7 +101,6 @@
 /* Enable additional per-key animation modes that require a copy of the
  * framebuffer (with accompanying storage cost).
  */
-#    define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 #    define ENABLE_RGB_MATRIX_DIGITAL_RAIN
 #    define ENABLE_RGB_MATRIX_TYPING_HEATMAP
 #endif

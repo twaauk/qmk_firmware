@@ -33,15 +33,6 @@
 
 #    define RGB_DISABLE_WHEN_USB_SUSPENDED
 
-// This option is required for the TYPING_HEATMAP and DIGITAL_RAIN effects,
-// both of which are disabled below, so the common support for those effects is
-// disabled too.
-#    undef RGB_MATRIX_FRAMEBUFFER_EFFECTS
-
-// This option is required for reactive effects; disabling this option will
-// implicitly disable all of them.
-#    define RGB_MATRIX_KEYPRESSES
-
 #    define ENABLE_RGB_MATRIX_ALPHAS_MODS
 #    define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
 #    define ENABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT
@@ -74,14 +65,12 @@
 // LEDs are present, or when multiple LEDs are associated with the same key.
 #    undef ENABLE_RGB_MATRIX_PIXEL_FRACTAL
 
-// Framebuffer effects; can be enabled only if RGB_MATRIX_FRAMEBUFFER_EFFECTS
-// is defined.  Both of these effects currently don't work properly when the
-// key matrix does not match the physical layout, so they are disabled.
+// Framebuffer effects; Both of these effects currently don't work properly when
+// the key matrix does not match the physical layout, so they are disabled.
 #    undef ENABLE_RGB_MATRIX_TYPING_HEATMAP
 #    undef ENABLE_RGB_MATRIX_DIGITAL_RAIN
 
-// Reactive effects; can be enabled only if at least one of
-// RGB_MATRIX_KEYPRESSES or RGB_MATRIX_KEYRELEASES is defined.
+// Reactive effects
 #    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
 #    define ENABLE_RGB_MATRIX_SOLID_REACTIVE
 #    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE

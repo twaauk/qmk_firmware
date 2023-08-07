@@ -30,7 +30,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SOFT_SERIAL_PIN D0
 // #define RGB_MATRIX_LED_COUNT 32
 
-#define RGB_MATRIX_KEYPRESSES
 
 #ifdef RGB_MATRIX_ENABLE
 #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 80
@@ -45,6 +44,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ENABLE_RGB_MATRIX_TYPING_HEATMAP
 #define ENABLE_RGB_MATRIX_RAINBOW_PINWHEELS
 
-#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 
 #endif

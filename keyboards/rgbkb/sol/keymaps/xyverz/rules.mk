@@ -12,7 +12,6 @@ NKRO_ENABLE = yes           # Nkey Rollover - if this doesn't work, see here: ht
 RGBLIGHT_ENABLE = yes       # Enable global lighting effects. Do not enable with RGB Matrix
 LED_MIRRORED = yes          # Mirror LEDs across halves (enable DIP 1 on slave, and DIP 2 and 3 on master)
 RGB_MATRIX_ENABLE = no      # Enable per-key coordinate based RGB effects. Do not enable with RGBlight
-RGB_MATRIX_KEYPRESSES = no  # Enable reactive per-key effects. Can be very laggy
 RGBLIGHT_FULL_POWER = no    # Allow maximum RGB brightness. Otherwise, limited to a safe level for a normal USB-A port
 UNICODE_ENABLE = no         # Unicode
 SWAP_HANDS_ENABLE = no      # Enable one-hand typing
@@ -43,10 +42,6 @@ ifeq ($(strip $(IOS_DEVICE_ENABLE)), yes)
 
 else ifeq ($(strip $(RGBLIGHT_FULL_POWER)), yes)
     OPT_DEFS += -DRGBLIGHT_FULL_POWER
-endif
-
-ifeq ($(strip $(RGB_MATRIX_KEYPRESSES)), yes)
-    OPT_DEFS += -DRGB_MATRIX_KEYPRESSES
 endif
 
 ifeq ($(strip $(LED_MIRRORED)), yes)

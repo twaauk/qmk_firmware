@@ -35,7 +35,6 @@
 #define DEBOUNCE 0
 
 //rgb-reactive
-//#define RGB_MATRIX_KEYPRESSES
 //#define EECONFIG_RGB_MATRIX (uint32_t *)16
 
 //skip usb startup check

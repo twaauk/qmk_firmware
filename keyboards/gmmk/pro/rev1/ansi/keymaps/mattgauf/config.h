@@ -25,13 +25,11 @@
 #define DYNAMIC_MACRO_SIZE 512
 
 /* RGB Matrix Features */
-#define RGB_MATRIX_KEYPRESSES
 #define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_SOLID_COLOR
 #define RGB_DISABLE_WHEN_USB_SUSPENDED true
 
 /* RGB Matrix Framebuffer Config */
-// #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
-// #define RGB_MATRIX_TYPING_HEATMAP_DECREASE_DELAY_MS 25
+// // #define RGB_MATRIX_TYPING_HEATMAP_DECREASE_DELAY_MS 25
 
 /* RGB Matrix Disabled Effects */
 #define DISABLE_RGB_MATRIX_ALPHAS_MODS                      // Static dual hue, speed is hue for secondary hue
@@ -47,17 +45,13 @@
 #define DISABLE_RGB_MATRIX_HUE_PENDULUM                     // Hue shifts up a slight ammount in a wave to the right, then back to the left
 #define DISABLE_RGB_MATRIX_HUE_WAVE                         // Hue shifts up a slight ammount and then back down in a wave to the right
 
-#if defined(RGB_MATRIX_FRAMEBUFFER_EFFECTS)
-    #define DISABLE_RGB_MATRIX_DIGITAL_RAIN                 // That famous computer simulation
-#endif
+#define DISABLE_RGB_MATRIX_DIGITAL_RAIN                 // That famous computer simulation
 
-#if defined(RGB_MATRIX_KEYPRESSES) || defined(RGB_MATRIX_KEYRELEASES)
-    #define DISABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE          // Hue & value pulse near a single key hit then fades value out
-    #define DISABLE_RGB_MATRIX_SOLID_REACTIVE_CROSS         // Hue & value pulse the same column and row of a single key hit then fades value out
-    #define DISABLE_RGB_MATRIX_SOLID_REACTIVE_NEXUS         // Hue & value pulse away on the same column and row of a single key hit then fades value out
-    #define DISABLE_RGB_MATRIX_SPLASH                       // Full gradient & value pulse away from a single key hit then fades value out
-    #define DISABLE_RGB_MATRIX_SOLID_SPLASH                 // Hue & value pulse away from a single key hit then fades value out
-#endif
+#define DISABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE          // Hue & value pulse near a single key hit then fades value out
+#define DISABLE_RGB_MATRIX_SOLID_REACTIVE_CROSS         // Hue & value pulse the same column and row of a single key hit then fades value out
+#define DISABLE_RGB_MATRIX_SOLID_REACTIVE_NEXUS         // Hue & value pulse away on the same column and row of a single key hit then fades value out
+#define DISABLE_RGB_MATRIX_SPLASH                       // Full gradient & value pulse away from a single key hit then fades value out
+#define DISABLE_RGB_MATRIX_SOLID_SPLASH                 // Hue & value pulse away from a single key hit then fades value out
 
 #define DISABLE_RGB_MATRIX_EFFECT_MAX
 // clang-format on

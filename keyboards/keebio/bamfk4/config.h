@@ -39,10 +39,8 @@
 #        define ENABLE_RGB_MATRIX_DUAL_BEACON
 #        define ENABLE_RGB_MATRIX_RAINBOW_BEACON
 #        define ENABLE_RGB_MATRIX_RAINBOW_PINWHEELS
-// enabled only if RGB_MATRIX_FRAMEBUFFER_EFFECTS is defined
 #        define ENABLE_RGB_MATRIX_TYPING_HEATMAP
 #        define ENABLE_RGB_MATRIX_DIGITAL_RAIN
-// enabled only of RGB_MATRIX_KEYPRESSES or RGB_MATRIX_KEYRELEASES is defined
 #        define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
 #        define ENABLE_RGB_MATRIX_SOLID_REACTIVE
 #        define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE
@@ -59,7 +57,6 @@
 #        define RGB_MATRIX_DEFAULT_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS
 #        define RGB_MATRIX_LED_COUNT 32
 #        define RGB_DISABLE_WHEN_USB_SUSPENDED
-#        define RGB_MATRIX_KEYPRESSES
 //#    endif
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */

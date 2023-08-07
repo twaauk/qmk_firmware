@@ -21,10 +21,6 @@
   #define INDICATOR_PIN_2 B9
 #endif
 
-#ifdef KEYBOARD_boardsource_the_mark
-  #define RGB_MATRIX_KEYPRESSES
-#endif
-
 #ifdef KEYBOARD_jacky_studio_bear_65
   #define ENABLE_RGB_MATRIX_RAINBOW_MOVING_CHEVRON
   #define ENABLE_RGB_MATRIX_MULTISPLASH
