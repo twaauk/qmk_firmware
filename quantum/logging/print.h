@@ -30,7 +30,7 @@
 #include "sendchar.h"
 #include "progmem.h"
 
-void print_set_sendchar(sendchar_func_t func);
+void print_init(void);
 
 /**
  * @brief This macro suppress format warnings for the function that is passed

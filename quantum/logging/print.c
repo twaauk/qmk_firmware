@@ -14,20 +14,13 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-#include <stddef.h>
 #include "sendchar.h"
 
-// bind lib/printf to console interface - sendchar
-
-static int8_t null_sendchar_func(uint8_t c) {
-    return 0;
-}
-static sendchar_func_t func = null_sendchar_func;
-
-void print_set_sendchar(sendchar_func_t send) {
-    func = send;
+void print_init(void) {
+    sendchar_init();
 }
 
+// bind lib/printf to sendchar interface (implemented by console)
 void putchar_(char character) {
-    func(character);
+    sendchar(character);
 }

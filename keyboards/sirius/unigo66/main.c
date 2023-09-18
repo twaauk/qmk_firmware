@@ -54,7 +54,7 @@ static void LUFA_setup(void)
 
     // for Console_Task
     USB_Device_EnableSOFEvents();
-    print_set_sendchar(sendchar);
+    print_init();
 }
 
 
