@@ -74,13 +74,6 @@ ifeq ($(strip $(AUDIO_ENABLE)), yes)
     SRC += $(QUANTUM_DIR)/audio/luts.c
 endif
 
-ifeq ($(strip $(SEQUENCER_ENABLE)), yes)
-    OPT_DEFS += -DSEQUENCER_ENABLE
-    MUSIC_ENABLE = yes
-    SRC += $(QUANTUM_DIR)/sequencer/sequencer.c
-    SRC += $(QUANTUM_DIR)/process_keycode/process_sequencer.c
-endif
-
 ifeq ($(strip $(MIDI_ENABLE)), yes)
     OPT_DEFS += -DMIDI_ENABLE
     MUSIC_ENABLE = yes
@@ -92,11 +85,6 @@ ifeq ($(strip $(MIDI_ENABLE)), yes)
     SRC += $(QUANTUM_DIR)/midi/bytequeue/bytequeue.c
     SRC += $(QUANTUM_DIR)/midi/bytequeue/interrupt_setting.c
     SRC += $(QUANTUM_DIR)/process_keycode/process_midi.c
-endif
-
-MUSIC_ENABLE ?= no
-ifeq ($(MUSIC_ENABLE), yes)
-    SRC += $(QUANTUM_DIR)/process_keycode/process_music.c
 endif
 
 VALID_STENO_PROTOCOL_TYPES := geminipr txbolt all
@@ -122,16 +110,6 @@ ifeq ($(strip $(STENO_ENABLE)), yes)
 
         SRC += $(QUANTUM_DIR)/process_keycode/process_steno.c
     endif
-endif
-
-ifeq ($(strip $(VIRTSER_ENABLE)), yes)
-    OPT_DEFS += -DVIRTSER_ENABLE
-endif
-
-ifeq ($(strip $(MOUSEKEY_ENABLE)), yes)
-    OPT_DEFS += -DMOUSEKEY_ENABLE
-    MOUSE_ENABLE := yes
-    SRC += $(QUANTUM_DIR)/mousekey.c
 endif
 
 VALID_POINTING_DEVICE_DRIVER_TYPES := adns5050 adns9800 analog_joystick cirque_pinnacle_i2c cirque_pinnacle_spi paw3204 pmw3320 pmw3360 pmw3389 pimoroni_trackball custom
@@ -553,13 +531,6 @@ ifneq ($(strip $(VARIABLE_TRACE)),no)
     endif
 endif
 
-ifeq ($(strip $(SLEEP_LED_ENABLE)), yes)
-    SRC += $(PLATFORM_COMMON_DIR)/sleep_led.c
-    OPT_DEFS += -DSLEEP_LED_ENABLE
-
-    NO_SUSPEND_POWER_DOWN := yes
-endif
-
 VALID_BACKLIGHT_TYPES := pwm timer software custom
 
 BACKLIGHT_ENABLE ?= no
@@ -629,20 +600,11 @@ ifeq ($(strip $(VIA_ENABLE)), yes)
     RAW_ENABLE := yes
     BOOTMAGIC_ENABLE := yes
     TRI_LAYER_ENABLE := yes
-    SRC += $(QUANTUM_DIR)/via.c
-    OPT_DEFS += -DVIA_ENABLE
 endif
 
-VALID_MAGIC_TYPES := yes
-BOOTMAGIC_ENABLE ?= no
-ifneq ($(strip $(BOOTMAGIC_ENABLE)), no)
-  ifeq ($(filter $(BOOTMAGIC_ENABLE),$(VALID_MAGIC_TYPES)),)
-    $(call CATASTROPHIC_ERROR,Invalid BOOTMAGIC_ENABLE,BOOTMAGIC_ENABLE="$(BOOTMAGIC_ENABLE)" is not a valid type of magic)
-  endif
-  ifneq ($(strip $(BOOTMAGIC_ENABLE)), no)
-      OPT_DEFS += -DBOOTMAGIC_LITE
-      QUANTUM_SRC += $(QUANTUM_DIR)/bootmagic/bootmagic_lite.c
-  endif
+ifeq ($(strip $(BOOTMAGIC_ENABLE)), yes)
+    OPT_DEFS += -DBOOTMAGIC_LITE
+    QUANTUM_SRC += $(QUANTUM_DIR)/bootmagic/bootmagic_lite.c
 endif
 COMMON_VPATH += $(QUANTUM_DIR)/bootmagic
 QUANTUM_SRC += $(QUANTUM_DIR)/bootmagic/magic.c
@@ -713,11 +675,6 @@ ifeq ($(strip $(SPLIT_KEYBOARD)), yes)
         endif
     endif
     COMMON_VPATH += $(QUANTUM_PATH)/split_common
-endif
-
-ifeq ($(strip $(CRC_ENABLE)), yes)
-    OPT_DEFS += -DCRC_ENABLE
-    SRC += crc.c
 endif
 
 ifeq ($(strip $(FNV_ENABLE)), yes)
@@ -816,12 +773,6 @@ ifeq ($(strip $(UNICODE_COMMON)), yes)
            $(QUANTUM_DIR)/unicode/utf8.c
 endif
 
-MAGIC_ENABLE ?= yes
-ifeq ($(strip $(MAGIC_ENABLE)), yes)
-    SRC += $(QUANTUM_DIR)/process_keycode/process_magic.c
-    OPT_DEFS += -DMAGIC_KEYCODE_ENABLE
-endif
-
 SEND_STRING_ENABLE ?= yes
 ifeq ($(strip $(SEND_STRING_ENABLE)), yes)
     OPT_DEFS += -DSEND_STRING_ENABLE
@@ -829,12 +780,8 @@ ifeq ($(strip $(SEND_STRING_ENABLE)), yes)
     SRC += $(QUANTUM_DIR)/send_string/send_string.c
 endif
 
-ifeq ($(strip $(AUTO_SHIFT_ENABLE)), yes)
-    SRC += $(QUANTUM_DIR)/process_keycode/process_auto_shift.c
-    OPT_DEFS += -DAUTO_SHIFT_ENABLE
-    ifeq ($(strip $(AUTO_SHIFT_MODIFIERS)), yes)
-        OPT_DEFS += -DAUTO_SHIFT_MODIFIERS
-    endif
+ifeq ($(strip $(AUTO_SHIFT_MODIFIERS)), yes)
+    OPT_DEFS += -DAUTO_SHIFT_MODIFIERS
 endif
 
 ifeq ($(strip $(PS2_MOUSE_ENABLE)), yes)
@@ -872,9 +819,6 @@ ifeq ($(strip $(JOYSTICK_ENABLE)), yes)
     ifeq ($(filter $(JOYSTICK_DRIVER),$(VALID_JOYSTICK_TYPES)),)
         $(call CATASTROPHIC_ERROR,Invalid JOYSTICK_DRIVER,JOYSTICK_DRIVER="$(JOYSTICK_DRIVER)" is not a valid joystick driver)
     endif
-    OPT_DEFS += -DJOYSTICK_ENABLE
-    SRC += $(QUANTUM_DIR)/process_keycode/process_joystick.c
-    SRC += $(QUANTUM_DIR)/joystick.c
 
     ifeq ($(strip $(JOYSTICK_DRIVER)), analog)
         OPT_DEFS += -DANALOG_JOYSTICK_ENABLE
@@ -936,18 +880,16 @@ ifeq ($(strip $(BLUETOOTH_ENABLE)), yes)
     endif
 endif
 
-ifeq ($(strip $(ENCODER_ENABLE)), yes)
-    SRC += $(QUANTUM_DIR)/encoder.c
-    OPT_DEFS += -DENCODER_ENABLE
-    ifeq ($(strip $(ENCODER_MAP_ENABLE)), yes)
-        OPT_DEFS += -DENCODER_MAP_ENABLE
-    endif
+# Enable dependent protocol features
+ifeq ($(strip $(SLEEP_LED_ENABLE)), yes)
+    NO_SUSPEND_POWER_DOWN := yes
 endif
 
-ifeq ($(strip $(OS_DETECTION_ENABLE)), yes)
-    SRC += $(QUANTUM_DIR)/os_detection.c
-    OPT_DEFS += -DOS_DETECTION_ENABLE
-    ifeq ($(strip $(OS_DETECTION_DEBUG_ENABLE)), yes)
-        OPT_DEFS += -DOS_DETECTION_DEBUG_ENABLE
-    endif
+ifeq ($(strip $(MOUSEKEY_ENABLE)), yes)
+    MOUSE_ENABLE := yes
+endif
+
+# Enable dependent generic features
+ifeq ($(strip $(SEQUENCER_ENABLE)), yes)
+    MUSIC_ENABLE = yes
 endif

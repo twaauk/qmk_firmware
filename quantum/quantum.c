@@ -40,7 +40,7 @@
 #    include "process_leader.h"
 #endif
 
-#ifdef MAGIC_KEYCODE_ENABLE
+#ifdef MAGIC_ENABLE
 #    include "process_magic.h"
 #endif
 

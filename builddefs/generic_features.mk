@@ -17,35 +17,50 @@ SPACE_CADET_ENABLE ?= yes
 GRAVE_ESC_ENABLE ?= yes
 
 GENERIC_FEATURES = \
+    AUTO_SHIFT \
     AUTOCORRECT \
     CAPS_WORD \
     COMBO \
     COMMAND \
+    CRC \
     DEFERRED_EXEC \
     DIGITIZER \
     DIP_SWITCH \
     DYNAMIC_KEYMAP \
     DYNAMIC_MACRO \
+    DYNAMIC_TAPPING_TERM \
+    ENCODER \
+    ENCODER_MAP \
     GRAVE_ESC \
     HAPTIC \
+    JOYSTICK \
     KEY_LOCK \
     KEY_OVERRIDE \
     LEADER \
+    MAGIC \
+    MUSIC \
+    OS_DETECTION \
+    OS_DETECTION_DEBUG \
     PROGRAMMABLE_BUTTON \
     REPEAT_KEY \
     SECURE \
+    SLEEP_LED \
     SPACE_CADET \
     SWAP_HANDS \
     TAP_DANCE \
+    TRI_LAYER \
     VELOCIKEY \
+    VIA \
+    VIRTSER \
     WPM \
-    DYNAMIC_TAPPING_TERM \
-    TRI_LAYER
+
 
 define HANDLE_GENERIC_FEATURE
     # $$(info "Processing: $1_ENABLE $2.c")
     SRC += $$(wildcard $$(QUANTUM_DIR)/process_keycode/process_$2.c)
+    SRC += $$(wildcard $$(QUANTUM_DIR)/$2/$2.c)
     SRC += $$(wildcard $$(QUANTUM_DIR)/$2.c)
+    SRC += $$(wildcard $$(PLATFORM_COMMON_DIR)/$2.c)
     OPT_DEFS += -D$1_ENABLE
 endef
 
