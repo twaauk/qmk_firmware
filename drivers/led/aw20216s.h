@@ -22,9 +22,6 @@
 #include "gpio.h"
 
 // ======== DEPRECATED DEFINES - DO NOT USE ========
-#ifdef DRIVER_COUNT
-#    define AW20216S_DRIVER_COUNT DRIVER_COUNT
-#endif
 #ifdef AW_SCALING_MAX
 #    define AW20216S_SCALING_MAX AW_SCALING_MAX
 #endif
@@ -53,6 +50,12 @@
 #define aw_led aw20216s_led_t
 #define g_aw_leds g_aw20216s_leds
 // ========
+
+#if defined AW20216S_CS_PIN_2
+#    define AW20216S_DRIVER_COUNT 2
+#elif defined AW20216S_CS_PIN_1
+#    define AW20216S_DRIVER_COUNT 1
+#endif
 
 typedef struct aw20216s_led_t {
     uint8_t driver : 2;

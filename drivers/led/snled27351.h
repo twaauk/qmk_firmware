@@ -21,9 +21,6 @@
 #include "progmem.h"
 
 // ======== DEPRECATED DEFINES - DO NOT USE ========
-#ifdef DRIVER_COUNT
-#    define SNLED27351_DRIVER_COUNT DRIVER_COUNT
-#endif
 #ifdef DRIVER_ADDR_1
 #    define SNLED27351_I2C_ADDRESS_1 DRIVER_ADDR_1
 #endif
@@ -65,6 +62,16 @@
 #define ckled2001_led snled27351_led_t
 #define g_ckled2001_leds g_snled27351_leds
 // ========
+
+#if defined SNLED27351_I2C_ADDRESS_4
+#    define SNLED27351_DRIVER_COUNT 4
+#elif defined SNLED27351_I2C_ADDRESS_3
+#    define SNLED27351_DRIVER_COUNT 3
+#elif defined SNLED27351_I2C_ADDRESS_2
+#    define SNLED27351_DRIVER_COUNT 2
+#elif defined SNLED27351_I2C_ADDRESS_1
+#    define SNLED27351_DRIVER_COUNT 1
+#endif
 
 #define SNLED27351_I2C_ADDRESS_GND 0x74
 #define SNLED27351_I2C_ADDRESS_SCL 0x75

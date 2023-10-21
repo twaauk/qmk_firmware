@@ -35,9 +35,6 @@
 #ifdef LED_DRIVER_ADDR_4
 #    define IS31FL3731_I2C_ADDRESS_4 LED_DRIVER_ADDR_4
 #endif
-#ifdef LED_DRIVER_COUNT
-#    define IS31FL3731_DRIVER_COUNT LED_DRIVER_COUNT
-#endif
 #ifdef ISSI_TIMEOUT
 #    define IS31FL3731_I2C_TIMEOUT ISSI_TIMEOUT
 #endif
@@ -51,6 +48,16 @@
 #define is31_led is31fl3731_led_t
 #define g_is31_leds g_is31fl3731_leds
 // ========
+
+#if defined IS31FL3731_I2C_ADDRESS_4
+#    define IS31FL3731_DRIVER_COUNT 4
+#elif defined IS31FL3731_I2C_ADDRESS_3
+#    define IS31FL3731_DRIVER_COUNT 3
+#elif defined IS31FL3731_I2C_ADDRESS_2
+#    define IS31FL3731_DRIVER_COUNT 2
+#elif defined IS31FL3731_I2C_ADDRESS_1
+#    define IS31FL3731_DRIVER_COUNT 1
+#endif
 
 #define IS31FL3731_I2C_ADDRESS_GND 0x74
 #define IS31FL3731_I2C_ADDRESS_SCL 0x75
