@@ -1,7 +1,7 @@
 USER_NAME := twaauk
-#RGBLIGHT_ENABLE = yes
+RGBLIGHT_ENABLE = yes
 COMBO_ENABLE = yes
-OLED_ENABLE = yes
+OLED_ENABLE = no
 
 VIA_ENABLE = yes
 LTO_ENABLE = yes
